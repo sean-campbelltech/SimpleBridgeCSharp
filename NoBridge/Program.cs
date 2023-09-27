@@ -1,5 +1,4 @@
 ﻿// Client
-using System.Globalization;
 using System.Text.RegularExpressions;
 using NoBridge;
 
@@ -24,5 +23,5 @@ static void Print(CarInsurance carInsurance)
 
 static string PascalCaseToSentence(string input)
 {
-    return Regex.Replace(input, "[a-z][A-Z]", m => $"{m.Value[0]} {char.ToLower(m.Value[1])}");
+    return Regex.Replace(input, "(\\B[A-Z])", " $1").Trim();
 }
