@@ -15,7 +15,7 @@ CarInsurance comp2 = new NoClaimsComprehensive(2023, "Mercedes-Benz", "E-Class")
 CarInsurance thirdParty2 = new NoClaimsThirdParty(2023, "VW", "Tiguan");
 CarInsurance propDamage2 = new NoClaimsPropertyDamage(2023, "Cadillac", "Escalade");
 Console.WriteLine("\nNo Claims Discounts:");
-Console.WriteLine("-------------------");
+Console.WriteLine("--------------------");
 Print(comp2);
 Print(thirdParty2);
 Print(propDamage2);
@@ -24,7 +24,7 @@ CarInsurance comp3 = new AutoOwnersComprehensive(2023, "Mercedes-Benz", "E-Class
 CarInsurance thirdParty3 = new AutoOwnersThirdParty(2023, "VW", "Tiguan");
 CarInsurance propDamage3 = new AutoOwnersPropertyDamage(2023, "Cadillac", "Escalade");
 Console.WriteLine("\nAuto Owners Discounts:");
-Console.WriteLine("---------------------");
+Console.WriteLine("----------------------");
 Print(comp3);
 Print(thirdParty3);
 Print(propDamage3);

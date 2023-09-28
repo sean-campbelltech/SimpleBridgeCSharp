@@ -18,6 +18,7 @@ namespace WithBridge
         public string Make { get; }
         public string Model { get; }
 
+        // Operation
         public decimal CalculatePremium()
         {
             decimal normalPrice = GetPremium();
