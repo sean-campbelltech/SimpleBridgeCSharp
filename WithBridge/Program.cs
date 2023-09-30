@@ -1,12 +1,11 @@
 ﻿// Client
-using System;
 using System.Text.RegularExpressions;
 using WithBridge;
 
-Discount safeDriverDiscount = new SafeDriverDiscount();
-CarInsurance comp1 = new Comprehensive(2023, "Mercedes-Benz", "E-Class", safeDriverDiscount);
-CarInsurance thirdParty1 = new ThirdParty(2023, "VW", "Tiguan", safeDriverDiscount);
-CarInsurance propDamage1 = new PropertyDamage(2023, "Cadillac", "Escalade", safeDriverDiscount);
+Discount safeDiscount = new SafeDriverDiscount();
+CarInsurance comp1 = new Comprehensive(2023, "Mercedes-Benz", "E-Class", safeDiscount);
+CarInsurance thirdParty1 = new ThirdParty(2023, "VW", "Tiguan", safeDiscount);
+CarInsurance propDamage1 = new PropertyDamage(2023, "Cadillac", "Escalade", safeDiscount);
 Console.WriteLine("Safe Driver Discounts:");
 Console.WriteLine("----------------------");
 Print(comp1);

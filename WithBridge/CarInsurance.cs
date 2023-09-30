@@ -18,12 +18,11 @@ namespace WithBridge
         public string Make { get; }
         public string Model { get; }
 
-        // Operation
         public decimal CalculatePremium()
         {
             decimal normalPrice = GetPremium();
-            decimal discountedPrice = normalPrice * (_discount.GetDiscount() / 100m);
-            return normalPrice - discountedPrice;
+            decimal discountPortion = normalPrice * (_discount.GetDiscount() / 100m);
+            return normalPrice - discountPortion;
         }
 
         protected abstract decimal GetPremium();
